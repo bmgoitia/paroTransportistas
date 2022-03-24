@@ -1,0 +1,186 @@
+
+body{
+    max-width: 450px;
+    margin: 0 auto;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#container{
+    padding: 0 3%;
+}
+
+#title{
+  text-align: center;
+}
+
+#title h2{
+    font-size: 1.3rem;
+    margin-top: 12px;
+    margin-bottom:5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+#title p{
+    margin:0;
+    font-size: 0.55rem;
+    font-style: italic;
+}
+
+#menu{
+    margin-top: 20px;
+    
+}
+
+.menuRow:first-of-type {
+    padding-bottom: 20px; 
+  }
+
+.menuRow{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px; 
+}
+
+.sect{
+    margin-right: 10px;
+    padding-bottom: 3px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.mSel{
+    border-bottom: 1.5px dotted grey;
+}
+
+.sect img{
+    width: 40px;
+    height: 40px;
+}
+
+.sect p{
+    font-style: italic;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
+
+
+
+
+.ley{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ley p{
+    margin: 0.5rem auto;
+    font-size:0.8rem;
+}
+
+
+
+.ley span{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+
+.masm{
+    background-color: #acdb7b;
+}
+
+.pp{
+    background-color: #05aff0;
+}
+
+.cs{
+    background-color: #febf00;
+}
+
+.psoe{
+    background-color: #ff0000;
+}
+
+.vox{
+    background-color: #05af50;
+}
+
+.gm{
+    background-color: #333398;
+}
+
+
+/* ITEMS */
+
+.items{
+    margin-top: 10px;
+}
+
+
+.item{
+    display:flex;
+    margin-bottom: 10px;
+    
+}
+
+.img{
+    margin-bottom: -4px;
+}
+
+.img img{
+    height: 80px;
+    width: 80px;
+    max-width: 150px;
+    max-height: 150px;
+
+}
+
+.data{
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(171, 171, 171, 0.34);
+}
+
+
+
+p.name{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+p.pos{
+    padding: 0 10px;
+    font-size: 0.7rem;
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+.part{
+    padding-top: 4px;
+    padding-bottom: 7px;
+}
+
+
+.part span{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.beb, .sup, .merc, .eCom, .ind, .aut{
+    display: none;
+}
+
+#credit{
+    margin-top: 22px;
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: center;
+}

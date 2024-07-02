@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form id="lv_loginForm">
+        <input type="password" id="lv_password" placeholder="Enter password">
+        <button type="submit">Login</button>
+    </form>
+    <script>
+        document.getElementById('lv_loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const password = document.getElementById('lv_password').value;
+            if (password === 'Eloisse') {
+                sessionStorage.setItem('authenticated', 'true');
+                window.location.href = 'index.html';
+            } else {
+                alert('Mal');
+            }
+        });
+    </script>
+</body>
+</html>

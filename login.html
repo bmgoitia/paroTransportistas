@@ -5,12 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <style>
+
+        .lv_input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f2f5;
+        }
+
+        #lv_loginForm {
+        padding: 40px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        }
+
+        #lv_loginForm input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+        #lv_loginForm button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        #lv_loginForm button[type="submit"]:hover {
+        background-color: #0056b3;
+        }
+        
+
+    </style>
+
+
 </head>
 <body>
-    <form id="lv_loginForm">
-        <input type="password" id="lv_password" placeholder="Enter password">
-        <button type="submit">Login</button>
-    </form>
+    <div class="lv_input">
+        <form id="lv_loginForm">
+            <input type="password" id="lv_password" placeholder="Contraseña">
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+    
     <script>
         document.getElementById('lv_loginForm').addEventListener('submit', function(event) {
             event.preventDefault();
@@ -19,7 +68,7 @@
                 sessionStorage.setItem('authenticated', 'true');
                 window.location.href = 'index.html';
             } else {
-                alert('Mal');
+                alert('Mal, quinquis');
             }
         });
     </script>
